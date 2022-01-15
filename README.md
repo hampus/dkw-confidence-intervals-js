@@ -9,16 +9,16 @@ Install by copying into your project for now. See unit tests for detailed usage.
 
 Example usage:
 ```javascript
-    const confidence = require('./confidence');
+const confidence = require('./confidence');
 
-    const ratings = {
-      1: 0, 2: 3, 3: 9, 4: 53, 5: 144,
-    };
+const ratings = {
+  1: 0, 2: 3, 3: 9, 4: 53, 5: 144,
+};
 
-    const [lower, upper] = confidence.calculateConfidenceInterval(ratings, 0.95);
+const [lower, upper] = confidence.calculateConfidenceInterval(ratings, 0.95);
 
-    expect(lower).toBeCloseTo(4.24);
-    expect(upper).toBeCloseTo(4.78);
+expect(lower).toBeCloseTo(4.24);
+expect(upper).toBeCloseTo(4.78);
 ```
 
 Tests and ESLint can be run through `npm run test` or using e.g. the Jest and
