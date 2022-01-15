@@ -1,9 +1,13 @@
-# Library for simple nonparametric confidence intervals
+# Simple nonparametric confidence intervals
 
-This library calculates conservative nonparametric confidence intervals of the
-expected value (also known as mean or average) based on observations. It works
-great to calculate confidence intervals for the true average product rating
-based on known ratings, for example.
+This JavaScript library calculates conservative nonparametric confidence
+intervals of the expected value (also known as mean or average) based on
+observations. It works great to calculate confidence intervals for the true
+average product rating based on known ratings, for example.
+
+It uses the Dvoretzky–Kiefer–Wolfowitz inequality to calculate confidence
+intervals without making assumptions about the underlying probability
+distribution.
 
 Install by copying into your project for now. See unit tests for detailed usage.
 
