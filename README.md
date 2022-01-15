@@ -7,8 +7,8 @@ based on known ratings, for example.
 
 Install by copying into your project for now. See unit tests for detailed usage.
 
-Example usage::
-
+Example usage:
+```javascript
     const confidence = require('./confidence');
 
     const ratings = {
@@ -19,8 +19,9 @@ Example usage::
 
     expect(lower).toBeCloseTo(4.24);
     expect(upper).toBeCloseTo(4.78);
+```
 
-Tests and ESLint can be run through npm run test or using e.g. the Jest and
+Tests and ESLint can be run through `npm run test` or using e.g. the Jest and
 ESLint plugins for VS Code.
 
 See LICENSE.txt for the license (Apache 2.0).
